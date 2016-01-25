@@ -1,5 +1,9 @@
-@keyframes slide_in {from{transform: translateX(100%)}to{transform: translateX(0)}}
-@-webkit-keyframes slide_in {from{-webkit-transform: translateX(100%)}to{-webkit-transform: translateX(0)}}
+@keyframes slide_in {from{transform: translateY(-100%)}to{transform: translateY(0)}}
+@-webkit-keyframes slide_in {from{-webkit-transform: translateY(-100%)}to{-webkit-transform: translateY(0)}}
+
+body {
+	font-family: sans serif;
+}
 
 form {
 	position: relative;
@@ -16,6 +20,7 @@ form {
 	-webkit-border-radius: 20px;
 	border: none;
 	margin-bottom: 150px;
+	text-align: center;
 	animation: slide_in 1s ease-in-out;
 	-webkit-animation: slide_in 1s ease-in-out;
 }
@@ -100,4 +105,8 @@ form span a {
 
 #switcher_login a {
 	color: #999;
+}
+
+.item-list {
+	list-style: none;
 }

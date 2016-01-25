@@ -1,0 +1,30 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="form.css">
+	<title>TEST FORM - Mond css</title>
+	<style>
+		body{background-color: #f2f2f2;background-image: url('https://pixabay.com/static/uploads/photo/2016/01/03/17/59/bananas-1119790_960_720.jpg');background-repeat: no-repeat;background-size: cover}
+	</style>
+</head>
+<body>
+	<form id="login-form" action="index.php" method="post">
+		<li class="item-list">
+			<label for="username">Username</label>
+			<input type="text" placeholder="Username" name="user" id="username-field" autofocus="autofocus" required/>
+		</li>
+		<li class="item-list">
+			<label for="password">Password</label>
+			<input type="password" placeholder="Password" name="password" id="password-field" required/>
+		</li>
+		<li class="item-list">
+			<input type="submit" value="Login" name="login_submit" id="login-button" />
+			<span id="forgot-password"><a href="">Forgot password?</a></span>
+		</li>
+		<li class="item-list" id="switcher_login">
+			<span>New user? <a href="">Register</a></span>
+		</li>
+	</form>
+</body>
+</html>
