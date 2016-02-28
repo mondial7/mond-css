@@ -1,0 +1,71 @@
+body {
+	margin: 0;
+	background-color: #ff7f00;
+	font-family: sans-serif;
+}
+
+form {
+	background-color: #fbfbfb;
+	height: auto;
+	overflow: hidden;
+	width: calc(90% - 40px);
+	padding: 20px;
+	max-width: 700px;
+	margin: 50px auto;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+
+
+
+label {
+	display: block;
+	margin: 5px auto;
+	margin-top: 15px
+}
+
+input, textarea, select, option {
+	border: none;
+	color: #111;
+	background-color: #e7e7e7;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	line-height: 20px;
+	padding: 5px;
+	vertical-align: middle
+}
+
+textarea {
+	display: block;
+	width: 100%;
+	max-width: calc(100% - 10px); /* remove the padding */
+	height: 150px
+}
+
+label.notitle {
+	display: inline-block;
+	margin-top: 5px
+}
+
+input[type=submit], input[type=checkbox], input[type=radio], label.notitle, select {
+	cursor: pointer
+}
+
+input[type=submit] {
+	float: right;
+	margin-top: 20px
+}
+
+input[type=submit]:hover {
+	background-color: #ff5d00;
+	color: #fff;
+	transition: all 300ms;
+	-webkit-transition: all 300ms;
+}
+
+.error {
+	box-shadow: 0px 0px 4px #f00;
+	-webkit-box-shadow: 0px 0px 4px #f00
+}
+

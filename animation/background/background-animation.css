@@ -1,0 +1,79 @@
+/* 
+	Rainbow color (hex)
+	
+	(from red to violet)
+	#FF0000
+	#FF7F00
+	#FFFF00
+	#00FF00
+	#0000FF
+	#4B0082
+	#8F00FF
+
+*/
+
+body {
+	background: #F00; /* default background color, if animation is not working (red) */
+	animation: rainbow 7s linear infinite alternate;
+	-webkit-animation: rainbow 7s linear infinite alternate;
+}
+
+/* Here we have the animation core 
+   Note: you do not have to care about where you
+   		 are writing the code, just not forget about it */
+
+
+@keyframes rainbow {
+	
+	0% { background: #FF0000 }
+	16.66% { background: #FF7F00 }
+	33.33% { background: #FFFF00 }
+	50% { background: #00FF00 }
+	66.66% { background: #0000FF }
+	83.33% { background: #4B0082 }
+	100% { background: #8F00FF }
+
+}
+
+/* Next is same code but with othere prefixes for multibrowser support */
+
+@-webkit-keyframes rainbow {0% { background: #FF0000 }16.66% { background: #FF7F00 }33.33% { background: #FFFF00 }50% { background: #00FF00 }66.66% { background: #0000FF }83.33% { background: #4B0082 }100% { background: #8F00FF }}
+
+
+
+
+
+/* Let's make our title look nice ;) */
+h1 {
+
+	text-align: center;
+	color: #FFF;
+	text-shadow: 0px 0px 10px #555;
+
+	/* thats the trick to center the title */
+	height: 0px;
+	line-height: 0px;
+	position: relative;
+	top: 50%;
+	margin: 0
+
+}
+
+/* This is part of the text in the middle trick */
+html,body {
+	height: 100%;
+	margin: 0
+}
+
+
+/* Last trick:
+   Uncomment this
+
+body{
+	background: 	    linear-gradient(left bottom, rgba(0,0,0,0.5),rgba(255,255,255,0));
+	background: -webkit-linear-gradient(left bottom, rgba(0,0,0,0.5),rgba(255,255,255,0));
+	background:    -moz-linear-gradient(left bottom, rgba(0,0,0,0.5),rgba(255,255,255,0));	
+	background: 	 -o-linear-gradient(left bottom, rgba(0,0,0,0.5),rgba(255,255,255,0));
+}
+
+*/
